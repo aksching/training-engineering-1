@@ -1,0 +1,9 @@
+-Develop a website according to the following specifications:
+-You must use React.js
+-Use the materials and definition from the Run Forrest, Run!
+-Consume the API endpoint that was created for the Promises mapping.
+-The grid within the website must be populated with the information from the JSON.
+-The search field within the "hero image" must be used to filter the elements of the grid
+-In addition to the company name, the user must be able to filter by the description of the company
+-The search must be “auto-triggered” from the 3rd character
+-Remove the magnifying glass image from the site layout

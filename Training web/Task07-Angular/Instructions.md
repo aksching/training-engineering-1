@@ -1,0 +1,7 @@
+-You must use Promises to request the data for popular the company grid.
+-Use the materials and specifications from the Run Forrest, Run! Exercise.
+-You must create a fake server using https://my-json-server.typicode.com/ and consume the information of the agencies from there.
+-The json to consume is the following http://akurey.com/trainings/companies.json
+-The grid within the website must be populated with the information from the JSON.
+-The search field within the "hero image" must be used to filter the grid elements using only the name of the company.
+-The search must be "triggered" at the moment the user presses Enter or presses the image of the "magnifying glass".

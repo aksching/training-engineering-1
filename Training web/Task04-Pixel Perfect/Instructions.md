@@ -1,0 +1,13 @@
+-Use this project in Figma to get the measurements and assets from the website.
+-The site must be Mobile-First.
+-The assets can be found in the following link.
+-You cannot use libraries (vendors) such as Bootstrap, Material, ...
+-Use BEM.
+-The verification badge for each element must be an SVG embedded flat within the HTML.
+-The icon "hambuger" and "lupa" (menu for mobile) must be part of an icon font. You can use IconMoon or Fontastic to generate the new font.
+-You must use SASS to develop your styles.
+-You can use flex-box to reduce development time.
+-Colors, styles and fonts cannot be changed.
+-The site has to be functional for Chrome, Firefox and IE (version 9.0). And for all browsers it has to show the same designs.
+-Use gulp to lift the project.
+-The project must be "Pixel Perfect".
