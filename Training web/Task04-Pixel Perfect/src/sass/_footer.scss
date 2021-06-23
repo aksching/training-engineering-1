@@ -1,0 +1,36 @@
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    bottom: 0;
+    font-size: 12px;
+   
+}
+.footer-sections {
+    padding: 13px;
+}
+.footer__terms {
+    margin-top: 13px;
+}
+@media (min-width: 768px){
+    .footer {
+        height: 60px;
+        display: flex;
+        align-content: center;
+    }
+    .footer-sections {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    .footer__text {
+        width: 100%;
+    }
+    .footer__terms {
+        margin-top: 0px;
+        width: 100%;
+        text-align: right;
+    }
+}

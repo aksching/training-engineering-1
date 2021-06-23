@@ -1,0 +1,114 @@
+.grid {
+    font-family: "Open Sans", serif;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+  .list {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+   
+  }
+  .list__item {
+    
+   margin-bottom: 17px;
+  }
+  .card {
+    max-width: 360px;
+    text-align: center;
+    padding: 18px;
+  }
+  
+  .card__header {
+    
+    display: flex;
+    font-family: "Open Sans", serif;
+    align-items: center;
+    .card__title{
+      font-size: 18px;
+      width: 90%;
+      text-align: left;
+    }
+    .card__badge {
+      background-color: white;
+      color: black;
+      width: 10%;
+      float: right;
+    }
+    .card__badge-img {
+      height: 29px;
+      width: 32px;
+    }
+  }
+  
+  .card__content {
+    display: flex;
+    border-top: 1px solid grey;
+    margin: 10px 5px;
+    text-align: justify;
+    .card__text{
+      font-size: 12px;
+      padding-top: 9px;
+      // max-width: 172px;
+    }
+  }
+  
+  .card__image {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .card__actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card__price {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    width: 100%;
+  }
+  .button-div {
+    width: 100%;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+
+
+@media (min-width: 768px){
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .list__item {
+    padding: 0px;
+    margin: 10px;
+  }
+  .card {
+    max-width: 360px;
+    // padding: 0px;
+    .card__price {
+      text-align: left;
+    }
+  }
+
+}
