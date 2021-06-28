@@ -1,4 +1,4 @@
-var effects = {
+const effects = {
     fire : {
       fire : 0.5,
       grass : 2,
@@ -24,23 +24,23 @@ var effects = {
       electric : 0.5
     }
   };
-var yourself = {
-    'name': "Pokemon1",
-    'type': 'fire',
-    'attack': 1,
-    'defense': 1
+const yourself = {
+    name: "Pokemon1",
+    type: 'fire',
+    attack: 1,
+    defense: 1
 };
 
-var opponent = {
-    'name': "Pokemon2",
-    'type': 'grass',
-    'attack': 1,
-    'defense': 1
+const opponent = {
+    name: "Pokemon2",
+    type: 'grass',
+    attack: 1,
+    defense: 1
 };
 
 
   //Function that calculates my damage
-function calculateDamage(yourself, opponent) {
+function damage(yourself, opponent) {
     return Math.ceil(50 * (yourself.attack / opponent.defense) *
       effects[yourself.type][opponent.type])
   }
