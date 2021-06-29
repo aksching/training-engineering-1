@@ -1,149 +1,148 @@
+$tablet-width: 768px;
+$desktop-width: 1280px;
 .grid {
-  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-family: Arial,Helvetica,sans-serif;
   width: 100%;
   padding-top: 17px;
-}
-.list {
-  list-style-type: none;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.list__item {
-  margin-bottom: 19.5px;
-}
-.card {
-  max-width: 360px;
-  text-align: center;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  box-sizing: border-box;
-}
+  padding-bottom: 8px;
+  .list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    .list__item {
+      .card {
+        padding-bottom: 22px;
+        padding-top: 14px;
+        max-width: 360px;
+        text-align: center;
+        font-size: 12px;
+        box-sizing: border-box;
+        margin-bottom: 17px;
+        .card__header {
+          border-bottom: 1px solid #d8d8d8;
+          margin-left: 23px;
+          display: flex;
+          justify-content: space-between;
+          margin-right: 23px;
+          box-sizing: border-box;
+          .card__title {
+        
+            font-size: 18px;
+            text-align: left;
+            width: 100%;
+            height: 21px;
+            padding-bottom: 7px;
+            padding-top: 4px;
+          }
+          .card__badge {
+            background-color: white;
+            color: black;
+            margin-bottom: 3px;
+            padding-left: 5px;
+            height: 29px;
+            width: 32px;
+            .card__badge-img {
+              height: 29px;
+              width: 32px;
+          }
+          }
+        }
+        .card__content {
+          display: flex;
+          text-align: justify;
+          margin-left: 22px;
+          margin-right: 24px;
+          .card__image { 
+            margin-top: 9px;
+            margin-left: 2px;
+            .card__image img {
+              border: 1px solid rgb(168, 168, 168);
+            }
+          }
+          .card__text {
+            width: 172px;
+            height: 119px;
+            font-size: 12px;
+            margin-left: 16px;
+            margin-top: 9px;
+            margin-bottom: 11px;
+            line-height: 14px;
+            text-align: justify;
+            box-sizing: border-box;
+          }
+        }
+        .card__actions {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 24px;
+          .card__price {
+            font-weight: bolder;
+            font-size: 14px;
+            margin-right: 12px;
+            margin-top: 8px;
+          }
+          .button-div {
+            width: 156px;
+            .button {
+              box-sizing: border-box;
+              font-size: 14px;
+              background-color: black;
+              width: 156px;
+              height: 34px;
+              color: white;
+              border-radius: 18px;
+              padding-top: 7px;
+              padding-bottom: 9px;
+              padding-left: 46px;
+              font-weight: bolder;
+              padding-right: 46px;
+              line-height: 16px;
+            }
+          }
+        }
+        
+      }
+    }
 
-.card__header {
-  border-bottom: 1px solid #d8d8d8;
-  margin-left: 23px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Open Sans",serif;
-  margin-right: 23px;
-  margin-bottom: 6px;
-  box-sizing: border-box;
-}
-.card__title {
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 18px;
-  text-align: left;
-  width: 100%;
-  height: 21px;
-  margin-bottom: 7px;
-  margin-top: 18px;
-}
-.card__badge {
-  background-color: white;
-  color: black;
-  padding-bottom: 4px;
-  padding-top: 13px;
-  height: 29px;
-  width: 32px;
-  box-sizing: border-box;
-  padding-left: 3px;
-}
-
-
-.card__badge-img {
-    height: 29px;
-    width: 32px;
-}
-.card__content {
-  display: flex;
-  text-align: justify;
-  margin-left: 22px;
-  margin-right: 24px;
-  box-sizing: border-box;
-}
-
-.card__image img {
-    margin-top: 3px;
-    margin-left: 2px;
-    border: 1px solid rgb(168, 168, 168);
-}
-.card__text {
-  width: 172px;
-  height: 119px;
-  font-size: 12px;
-  margin-left: 15px;
-  margin-top: 1px;
-  margin-bottom: 12px;
-  line-height: 14px;
-  text-align: justify;
-  box-sizing: border-box;
-  font-family: 'Arial';
-}
-
-
-.card__actions {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1px;
-  margin-bottom: 21px;
-  margin-left: 24px;
-}
-.card__price {
-  font-weight: bolder;
-  font-size: 14px;
-  margin-right: 12px;
-  margin-top: 6px;
-}
-.button-div {
-  width: 156px;
-}
-
-.button {
-  box-sizing: border-box;
-  font-size: 14px;
-  background-color: black;
-  width: 156px;
-  height: 34px;
-  color: white;
-  // border: 1px solid black;
-  border-radius: 18px;
-  padding-top: 8px;
-  padding-bottom: 9px;
-  padding-left: 46px;
-  font-weight: bolder;
-  padding-right: 46px;
-  line-height: 16px;
+  }
+  
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .grid {
-    position: absolute;
-    top: 502px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-left: 21px;
-    padding-bottom: 8px;
+    padding-bottom: 0px;
+    .list {
+      .list__item {
+        .card {
+          margin-bottom: 8px;
+          margin-right: 14px;
+        }
+      }
+    }
   }
-  .list__item {
-    margin-right: 13px;
-    margin-bottom: 8px;
-  }
+  
 }
-@media (min-width: 1024px) {
+
+@media (min-width: $desktop-width) {
   .grid {
-    height: 592px;
-    top: 577px;
     padding-top: 56px;
-    padding-bottom: 39px;
+    padding-bottom: 26px;
     padding-left: 68px;
     padding-right: 18px;
+    .list {
+      .list__item {
+        margin: 0px;
+        .card {
+          margin-bottom: 13px;
+          margin-right: 38px;
+        }
+      }
+    }
   }
-  .list__item {
-    margin-bottom: 13px;
-    margin-right: 38px;
-  }
-
- 
+  
 }

@@ -52,7 +52,7 @@ gulp.task('run',gulp.series(['copyHtml','imageMin','sass','css']));
 gulp.task('watch', done => {
 gulp.watch('./src/sass/*.scss', gulp.series(['sass']));
 gulp.watch('./css/*.css', gulp.series(['css']));
-// gulp.watch('./css/*.css', gulp.series(['css']));
+gulp.watch('./src/*', gulp.series(['imageMin']));
 gulp.watch('./src/*.html', gulp.series(['copyHtml']));
 done();
 });
