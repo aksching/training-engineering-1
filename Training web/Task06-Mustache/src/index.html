@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://file.myfontastic.com/Q6wZ2i9YRAy7tZUTMbHBUa/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadInfo()">
+    <script src="app.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo of Super Agents">
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link first-nav-link">&nbsp;Directorio de Agentes&nbsp;</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Contacto</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Ingresar</a>
+          </li>
+        </ul>
+        <div class="main-nav__icon-wrapper">
+            <i class="icon-bars"></i>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="container__imageWrapper">
+            <img class="container__img container__mobile-banner" src="images/banner-mobile.png" alt="Agente 1">
+            <img src="images/banner.png" class="container_img container__main-banner" alt="Agent banner">
+            <img class="container__img container__mobile-banner-small" src="images/banner-mobile-small.png" alt="Agent banner">
+            <div class="search">
+                <div class="search__text">
+                    <h1 class="search__title">
+                      Los Mejores agentes de seguridad
+                    </h1>
+                </div>
+                <div class="search__form" >
+                  <input class="search__input" type="text" placeholder="Buscar por Ubicación" name="search">
+                  <button class="search__button" type="submit"><i class="icon-search"></i></button>
+                </div>
+            </div>
+        </div>
+       
+          <div class="grid" id="grid">
+                    <script id="template" type="x-tmpl-mustache">
+                        <ul class="list">
+                            {{#items}}
+                            <li class="list__item">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h1 class="card__title">{{name}}</h1>
+                                    <div class="card__badge">
+                                        <img class="card__badge-img" src="images/Badge.png" alt="Badge">
+                                    </div>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__image">
+                                        <img src="images/image.png" alt="Example image">
+                                    </div>
+                                    <p class="card__text">{{description}}</p>
+                                </div>
+                                <div class="card__actions">
+                                    <p class="card__price">{{price}}</p>
+                                    <div class="button-div">
+                                        <button class="button" type="button">
+                                            Contratar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                            {{/items}}
+                        </ul>
+                </script>
+                
+          </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-sections">
+            <p class="footer__text">Desarrollado por Akurey.com | Todos los derechos reservados.</p>
+            <p class="footer__text footer__terms"><u>Términos y Condiciones</u></p>
+        </div>
+      </footer>
+    <script src="app.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+</body>
+</html>
